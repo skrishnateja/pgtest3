@@ -11,7 +11,7 @@
     // This is to have the 'deviceready' code from firing in a webbrowser.
     var device = {platform:'browser'};
     function onLoad() {
-        //alert("body loaded.");
+        alert("body loaded.");
         $.ajax({
  type: "POST",
  url:"http://skrishnateja.xyz/phonegaptest/json.php",
@@ -41,7 +41,7 @@
     <button id=openPlugin class="button button-pill button-action marginSpacer">create/open</button>
     <button id=closePlugin class="button button-pill button-caution marginSpacer">delete/close</button>
 </div>
-
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/fastclick.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/zepto-1.1.6.js"></script>
