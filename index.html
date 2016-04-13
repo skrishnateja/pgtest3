@@ -12,6 +12,15 @@
     var device = {platform:'browser'};
     function onLoad() {
         //alert("body loaded.");
+        $.ajax({
+ type: "POST",
+ url:"http://skrishnateja.xyz/phonegaptest/json.php",
+ crossDomain: true,
+ cache: false,
+ success: function(data){
+ 
+ alert("inserted");
+ }});
         app.onDeviceReady();
     }
     </script>
@@ -19,11 +28,11 @@
 <body onload="onLoad()">
 <div id=header class="button button-block button-large">
     <img align=left src=images/favicon-48x48.png>
-    Boilerplate #8
+    Boilerplate
     <button id=exitApp class="button button-pill button-primary button-large">Exit</button>
 </div>
 <div data-role="content">
-         <ul id="employeeList" data-role="listview" data-filter="true"></ul>
+         <ul id="employeeList" data-role="listview" data-filter="true">eampty lists</ul>
 </div>
 <div id=alabel class=marginSpacer>plugin available: <span id=isavailable>content</span></div>
 <div>Plugin Name</div>
